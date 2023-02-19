@@ -15,7 +15,7 @@ export function App() {
             content="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium alias laborum odio dicta illum ipsam provident similique! Dolorum modi, impedit, repellendus maiores veritatis expedita quisquam totam amet explicabo dolorem enim?"
           />
           <Post
-            author="Ana Júlia Miranda"
+            author="Ana Júlia "
             content="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium alias laborum odio dicta illum ipsam provident similique! Dolorum modi, impedit, repellendus maiores veritatis expedita quisquam totam amet explicabo dolorem enim?"
           />
         </main>

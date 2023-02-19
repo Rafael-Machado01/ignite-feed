@@ -4,6 +4,9 @@
   overflow: visible;
   height: 2000000000rem;
 }
+.sidebar strong {
+  color: black;
+}
 
 .cover {
   width: 100%;
