@@ -1,0 +1,12 @@
+.sidebar {
+  background: white;
+  border-radius: 8px;
+  overflow: visible;
+  height: 2000000000rem;
+}
+
+.cover {
+  width: 100%;
+  height: 72px;
+  object-fit: over;
+}
