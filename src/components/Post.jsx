@@ -4,6 +4,8 @@ import { Comment } from "./Comment";
 import { Avatar } from "./Avatar";
 import styles from "./Post.module.css";
 
+const comments = [1, 2, 3, 4];
+
 export function Post({ author, publishedAt, content }) {
   const publishedDateFormatted = format(
     new Date(publishedAt),
@@ -56,9 +58,9 @@ export function Post({ author, publishedAt, content }) {
         </footer>
       </form>
       <div className={styles.commentList}>
-        <Comment />
-        <Comment />
-        <Comment />
+        {comments.map((comment) => {
+          return <Comment />;
+        })}
       </div>
     </article>
   );

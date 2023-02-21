@@ -5,9 +5,7 @@ import { Post } from "./components/Post";
 import "./global.css";
 import styles from "./App.module.css";
 
-//  author: {avatar_url  "", name: "", role:""}
-//  PublishedAt: Date
-//  Content: String
+
 
 const posts = [
   {
