@@ -30,7 +30,7 @@ const posts = [
           '<a href="https://github.com/Rafael-Machado01">github.com/Rafael-Machado01</a>',
       },
     ],
-    PublishedAt: new Date("2023-02-22 19:23:22"),
+    publishedAt: new Date("2022-06-13 11:30:00"),
   },
   {
     id: 2,
@@ -52,7 +52,7 @@ const posts = [
           '<a href="https://github.com/Rafael-Machado01">github.com/Rafael-Machado01</a>',
       },
     ],
-    PublishedAt: new Date("2023-02-22 19:23:22"),
+    publishedAt: new Date("2022-06-13 11:30:00"),
   },
 ];
 
