@@ -14,23 +14,19 @@ const posts = [
     id: 1,
     author: {
       avatarUrl: "https://avatars.githubusercontent.com/u/12345678?v=4",
-      name: "Rafael  Machado",
-      role: "Developer  React",
+      name: "Rafael Machado",
+      role: "Developer React",
     },
     content: [
       { type: "paragraph", content: "Fala galeraa 👋" },
       {
         type: "paragraph",
         content:
-          "Acabei de subir mais um projeto no meu portifa. É um projeto que fiz  no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀",
+          "Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀",
       },
-      {
-        type: "link",
-        content:
-          '<a href="https://github.com/Rafael-Machado01">github.com/Rafael-Machado01</a>',
-      },
+      { type: "link", content: "jane.design/doctorcare" },
     ],
-    publishedAt: new Date("2022-06-13 11:30:00"),
+    publishedAt: "2022-06-13T11:30:00",
   },
   {
     id: 2,
@@ -46,13 +42,9 @@ const posts = [
         content:
           "Acabei de subir mais um projeto no meu portifa. É um projeto que fiz  no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀",
       },
-      {
-        type: "link",
-        content:
-          '<a href="https://github.com/Rafael-Machado01">github.com/Rafael-Machado01</a>',
-      },
+      { type: "link", content: "jane.design/doctorcare" },
     ],
-    publishedAt: new Date("2022-06-13 11:30:00"),
+    publishedAt: "2022-06-13T11:30:00",
   },
 ];
 
@@ -66,9 +58,10 @@ export function App() {
           {posts.map((post) => {
             return (
               <Post
+                key={post.id}
                 author={post.author}
                 content={post.content}
-                PublishedAt={post.PublishedAt}
+                publishedAt={new Date(post.publishedAt)}
               />
             );
           })}
