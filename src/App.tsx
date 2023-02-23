@@ -1,13 +1,12 @@
 import { Header } from "./components/Header";
 import { SideBar } from "./components/SideBar";
-import { Post } from "./components/Post";
+import { Post, PostType } from "./components/Post";
+import { faker } from "@faker-js/faker/locale/pt_BR";
 
 import "./global.css";
 import styles from "./App.module.css";
 
-
-
-const posts = [
+const posts: PostType[] = [
   {
     id: 1,
     author: {
@@ -54,14 +53,7 @@ export function App() {
         <SideBar />
         <main>
           {posts.map((post) => {
-            return (
-              <Post
-                key={post.id}
-                author={post.author}
-                content={post.content}
-                publishedAt={new Date(post.publishedAt)}
-              />
-            );
+            return <Post key={post.id} post={post} />;
           })}
         </main>
       </div>
